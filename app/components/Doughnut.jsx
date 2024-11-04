@@ -4,12 +4,14 @@ import dynamic from 'next/dynamic';
 
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
-function PieChart({ data }) {
+function DoughnutChart({ data }) {
   if (!data || !data.labels || !data.datasets) return null;
+
+  const total = data.datasets[0].data.reduce((a, b) => a + b, 0);
 
   const options = {
     chart: {
-      type: 'pie',
+      type: 'donut',
       foreColor: 'hsl(var(--foreground))'
     },
     labels: data.labels,
@@ -20,10 +22,27 @@ function PieChart({ data }) {
       'hsl(var(--chart-4))',
       'hsl(var(--chart-5))',
     ],
+    dataLabels: {
+      enabled: false
+    },
     legend: {
       position: 'bottom',
       labels: {
         colors: 'hsl(var(--foreground))'
+      }
+    },
+    plotOptions: {
+      pie: {
+        donut: {
+          labels: {
+            show: true,
+            total: {
+              show: true,
+              label: 'Total',
+              color: 'hsl(var(--foreground))'
+            }
+          }
+        }
       }
     },
     responsive: [{
@@ -44,11 +63,11 @@ function PieChart({ data }) {
       <Chart
         options={options}
         series={data.datasets[0].data}
-        type="pie"
+        type="donut"
         width="450"
       />
     </div>
   );
 }
 
-export default PieChart;
+export default DoughnutChart; 
