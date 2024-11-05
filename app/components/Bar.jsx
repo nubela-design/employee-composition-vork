@@ -10,7 +10,11 @@ function BarChart({ data }) {
   const options = {
     chart: {
       type: 'bar',
-      foreColor: 'hsl(var(--foreground))'
+      foreColor: 'hsl(var(--foreground))',
+      fontFamily: 'var(--font-geist-sans)',
+      toolbar: {
+        show: false
+      }
     },
     plotOptions: {
       bar: {
@@ -37,19 +41,29 @@ function BarChart({ data }) {
       categories: data.labels,
       labels: {
         style: {
-          colors: 'hsl(var(--foreground))'
+          colors: 'hsl(var(--foreground))',
+          fontSize: '14px',
+          fontFamily: 'var(--font-geist-sans)'
         }
       }
     },
     yaxis: {
       labels: {
         style: {
-          colors: 'hsl(var(--foreground))'
+          colors: 'hsl(var(--foreground))',
+          fontSize: '14px',
+          fontFamily: 'var(--font-geist-sans)'
         }
       }
     },
     legend: {
       show: false
+    },
+    tooltip: {
+      style: {
+        fontSize: '14px',
+        fontFamily: 'var(--font-geist-sans)'
+      }
     }
   };
 
@@ -59,7 +73,8 @@ function BarChart({ data }) {
         options={options}
         series={[{ data: data.datasets[0].data }]}
         type="bar"
-        height="350"
+        width="600"
+        height="400"
       />
     </div>
   );

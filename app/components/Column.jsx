@@ -10,7 +10,11 @@ function ColumnChart({ data }) {
   const options = {
     chart: {
       type: 'bar',
-      foreColor: 'hsl(var(--foreground))'
+      foreColor: 'hsl(var(--foreground))',
+      fontFamily: 'var(--font-geist-sans)',
+      toolbar: {
+        show: false  // Disable the toolbar/hamburger menu
+      }
     },
     plotOptions: {
       bar: {
@@ -41,6 +45,9 @@ function ColumnChart({ data }) {
         }
       }
     },
+    dataLabels: {
+      enabled: false
+    },
     legend: {
       show: false // Hide legend since each column has unique color
     }
@@ -52,7 +59,8 @@ function ColumnChart({ data }) {
         options={options}
         series={[{ data: data.datasets[0].data }]}
         type="bar"
-        height="350"
+        height="400"
+        width="600"
       />
     </div>
   );
