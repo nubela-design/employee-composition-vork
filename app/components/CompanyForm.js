@@ -20,6 +20,31 @@ const CompanyForm = () => {
     datasets: [{ data: [] }],
   });
 
+  const options = {
+    colors: [
+      'hsl(var(--chart-1))',
+      'hsl(var(--chart-2))',
+      'hsl(var(--chart-3))',
+      'hsl(var(--chart-4))',
+      'hsl(var(--chart-5))',
+      'hsl(var(--chart-6))',
+      'hsl(var(--chart-7))',
+      'hsl(var(--chart-8))',
+      'hsl(var(--chart-9))',
+      'hsl(var(--chart-10))',
+      'hsl(var(--chart-11))',
+      'hsl(var(--chart-12))',
+      'hsl(var(--chart-13))',
+      'hsl(var(--chart-14))',
+      'hsl(var(--chart-15))',
+      'hsl(var(--chart-16))',
+      'hsl(var(--chart-17))',
+      'hsl(var(--chart-18))',
+      'hsl(var(--chart-19))',
+      'hsl(var(--chart-20))'
+    ]
+  };
+
   const handleSubmit = async () => {
     fetch(`/api/mockEmployeeListing?url=${companyUrl}`, {
       method: "GET",
@@ -31,20 +56,26 @@ const CompanyForm = () => {
       .then((data) => {
         const countryCount = {};
         const occupationCount = {};
+        const countryFlags = {};
 
         data.employees.forEach((employee) => {
           const country = employee.profile.country_full_name;
           const occupation = employee.profile.occupation;
           countryCount[country] = (countryCount[country] || 0) + 1;
           occupationCount[occupation] = (occupationCount[occupation] || 0) + 1;
+          
+          if (!countryFlags[country]) {
+            countryFlags[country] = employee.profile.flagUrl;
+          }
         });
 
         setCountryData({
           labels: Object.keys(countryCount),
           datasets: [{
             data: Object.values(countryCount),
-            flags: data.employees.map(employee => ({
-              flagUrl: employee.profile.flagUrl
+            backgroundColor: options.colors.slice(0, Object.keys(countryCount).length),
+            flags: Object.keys(countryCount).map(country => ({
+              flagUrl: countryFlags[country]
             }))
           }]
         });

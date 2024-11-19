@@ -339,6 +339,227 @@
         "summary": "Frontend specialist focused on React and modern web technologies.",
         "flagUrl": "https://flagcdn.com/be.svg"
       }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/lukas-mueller",
+      "profile": {
+        "public_identifier": "lukas-mueller",
+        "profile_pic_url": "https://example.com/profiles/lukas.jpg",
+        "background_cover_image_url": "https://example.com/covers/lukas-cover.jpg",
+        "first_name": "Lukas",
+        "last_name": "Mueller",
+        "full_name": "Lukas Mueller",
+        "follower_count": 4230,
+        "country_full_name": "Germany",
+        "occupation": "Data Engineer",
+        "headline": "Data Engineer at DataTech Germany | Big Data Specialist",
+        "summary": "Specialized in building scalable data pipelines and ETL processes.",
+        "flagUrl": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/emma-weber",
+      "profile": {
+        "public_identifier": "emma-weber",
+        "profile_pic_url": "https://example.com/profiles/emma-w.jpg",
+        "background_cover_image_url": "https://example.com/covers/emma-w-cover.jpg",
+        "first_name": "Emma",
+        "last_name": "Weber",
+        "full_name": "Emma Weber",
+        "follower_count": 3890,
+        "country_full_name": "Germany",
+        "occupation": "Product Owner",
+        "headline": "Product Owner at BerlinTech | Agile Expert",
+        "summary": "Experienced product owner focusing on agile methodologies and team leadership.",
+        "flagUrl": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/felix-wagner",
+      "profile": {
+        "public_identifier": "felix-wagner",
+        "profile_pic_url": "https://example.com/profiles/felix.jpg",
+        "background_cover_image_url": "https://example.com/covers/felix-cover.jpg",
+        "first_name": "Felix",
+        "last_name": "Wagner",
+        "full_name": "Felix Wagner",
+        "follower_count": 5120,
+        "country_full_name": "Germany",
+        "occupation": "Cloud Architect",
+        "headline": "Cloud Architect at CloudGermany | AWS Expert",
+        "summary": "Cloud infrastructure specialist with focus on AWS and serverless architecture.",
+        "flagUrl": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/sophia-bauer",
+      "profile": {
+        "public_identifier": "sophia-bauer",
+        "profile_pic_url": "https://example.com/profiles/sophia.jpg",
+        "background_cover_image_url": "https://example.com/covers/sophia-cover.jpg",
+        "first_name": "Sophia",
+        "last_name": "Bauer",
+        "full_name": "Sophia Bauer",
+        "follower_count": 4780,
+        "country_full_name": "Germany",
+        "occupation": "UI/UX Designer",
+        "headline": "Senior UI/UX Designer at DesignBerlin | Design Systems",
+        "summary": "Creating user-centered design solutions with a focus on accessibility.",
+        "flagUrl": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/max-hoffmann",
+      "profile": {
+        "public_identifier": "max-hoffmann",
+        "profile_pic_url": "https://example.com/profiles/max.jpg",
+        "background_cover_image_url": "https://example.com/covers/max-cover.jpg",
+        "first_name": "Max",
+        "last_name": "Hoffmann",
+        "full_name": "Max Hoffmann",
+        "follower_count": 6340,
+        "country_full_name": "Germany",
+        "occupation": "DevOps Lead",
+        "headline": "DevOps Lead at GermanTech | Infrastructure Expert",
+        "summary": "Leading DevOps practices and cloud infrastructure optimization.",
+        "flagUrl": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/laura-klein",
+      "profile": {
+        "public_identifier": "laura-klein",
+        "profile_pic_url": "https://example.com/profiles/laura.jpg",
+        "background_cover_image_url": "https://example.com/covers/laura-cover.jpg",
+        "first_name": "Laura",
+        "last_name": "Klein",
+        "full_name": "Laura Klein",
+        "follower_count": 3950,
+        "country_full_name": "Germany",
+        "occupation": "Frontend Developer",
+        "headline": "Frontend Developer at MunichTech | React Specialist",
+        "summary": "Crafting modern web experiences with React and TypeScript.",
+        "flagUrl": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/jonas-fischer",
+      "profile": {
+        "public_identifier": "jonas-fischer",
+        "profile_pic_url": "https://example.com/profiles/jonas.jpg",
+        "background_cover_image_url": "https://example.com/covers/jonas-cover.jpg",
+        "first_name": "Jonas",
+        "last_name": "Fischer",
+        "full_name": "Jonas Fischer",
+        "follower_count": 4560,
+        "country_full_name": "Germany",
+        "occupation": "Backend Developer",
+        "headline": "Backend Developer at HamburgTech | Java Expert",
+        "summary": "Building robust backend systems with Java and Spring Boot.",
+        "flagUrl": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/anna-schmidt",
+      "profile": {
+        "public_identifier": "anna-schmidt",
+        "profile_pic_url": "https://example.com/profiles/anna-s.jpg",
+        "background_cover_image_url": "https://example.com/covers/anna-s-cover.jpg",
+        "first_name": "Anna",
+        "last_name": "Schmidt",
+        "full_name": "Anna Schmidt",
+        "follower_count": 5230,
+        "country_full_name": "Germany",
+        "occupation": "Scrum Master",
+        "headline": "Scrum Master at AgileGermany | Agile Coach",
+        "summary": "Facilitating agile transformations and team excellence.",
+        "flagUrl": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/tim-meyer",
+      "profile": {
+        "public_identifier": "tim-meyer",
+        "profile_pic_url": "https://example.com/profiles/tim.jpg",
+        "background_cover_image_url": "https://example.com/covers/tim-cover.jpg",
+        "first_name": "Tim",
+        "last_name": "Meyer",
+        "full_name": "Tim Meyer",
+        "follower_count": 4890,
+        "country_full_name": "Germany",
+        "occupation": "Security Engineer",
+        "headline": "Security Engineer at SecureGerman | Cybersecurity Expert",
+        "summary": "Implementing robust security solutions and best practices.",
+        "flagUrl": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/julia-keller",
+      "profile": {
+        "public_identifier": "julia-keller",
+        "profile_pic_url": "https://example.com/profiles/julia.jpg",
+        "background_cover_image_url": "https://example.com/covers/julia-cover.jpg",
+        "first_name": "Julia",
+        "last_name": "Keller",
+        "full_name": "Julia Keller",
+        "follower_count": 4120,
+        "country_full_name": "Germany",
+        "occupation": "Machine Learning Engineer",
+        "headline": "ML Engineer at AIGermany | Deep Learning Specialist",
+        "summary": "Developing innovative ML solutions for real-world problems.",
+        "flagUrl": "https://flagcdn.com/de.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/abdullah-al-saud",
+      "profile": {
+        "public_identifier": "abdullah-al-saud",
+        "profile_pic_url": "https://example.com/profiles/abdullah.jpg",
+        "background_cover_image_url": "https://example.com/covers/abdullah-cover.jpg",
+        "first_name": "Abdullah",
+        "last_name": "Al-Saud",
+        "full_name": "Abdullah Al-Saud",
+        "follower_count": 8450,
+        "country_full_name": "Saudi Arabia",
+        "occupation": "Technology Director",
+        "headline": "Technology Director at SaudiTech | Digital Transformation Leader",
+        "summary": "Leading digital transformation initiatives in the MENA region.",
+        "flagUrl": "https://flagcdn.com/sa.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/fatima-al-rashid",
+      "profile": {
+        "public_identifier": "fatima-al-rashid",
+        "profile_pic_url": "https://example.com/profiles/fatima.jpg",
+        "background_cover_image_url": "https://example.com/covers/fatima-cover.jpg",
+        "first_name": "Fatima",
+        "last_name": "Al-Rashid",
+        "full_name": "Fatima Al-Rashid",
+        "follower_count": 6320,
+        "country_full_name": "Saudi Arabia",
+        "occupation": "Data Scientist",
+        "headline": "Senior Data Scientist at RiyadhAI | AI Research Lead",
+        "summary": "Specializing in AI applications for smart city initiatives.",
+        "flagUrl": "https://flagcdn.com/sa.svg"
+      }
+    },
+    {
+      "profile_url": "https://www.linkedin.com/in/omar-al-qahtani",
+      "profile": {
+        "public_identifier": "omar-al-qahtani",
+        "profile_pic_url": "https://example.com/profiles/omar.jpg",
+        "background_cover_image_url": "https://example.com/covers/omar-cover.jpg",
+        "first_name": "Omar",
+        "last_name": "Al-Qahtani",
+        "full_name": "Omar Al-Qahtani",
+        "follower_count": 7890,
+        "country_full_name": "Saudi Arabia",
+        "occupation": "Cloud Architect",
+        "headline": "Cloud Architect at SaudiCloud | AWS & Azure Expert",
+        "summary": "Designing scalable cloud solutions for enterprise clients.",
+        "flagUrl": "https://flagcdn.com/sa.svg"
+      }
     }
   ]
 }
