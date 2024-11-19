@@ -150,7 +150,7 @@ const CompanyForm = () => {
                     </div>
                   </TabsContent>
                   <TabsContent value="pie" className="flex flex-col gap-4 items-center">
-                    <div id="pieChart">
+                    <div id="pieChart" className="overflow-x-auto w-full">
                       <PieChart data={countryData} />
                     </div>
                     <div className="flex gap-2">
