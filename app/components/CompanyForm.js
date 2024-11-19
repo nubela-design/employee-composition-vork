@@ -41,7 +41,12 @@ const CompanyForm = () => {
 
         setCountryData({
           labels: Object.keys(countryCount),
-          datasets: [{ data: Object.values(countryCount) }],
+          datasets: [{
+            data: Object.values(countryCount),
+            flags: data.employees.map(employee => ({
+              flagUrl: employee.profile.flagUrl
+            }))
+          }]
         });
 
         setOccupationData({
