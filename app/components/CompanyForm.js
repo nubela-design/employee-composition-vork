@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Input } from "../../components/ui/input";
+import { Button } from "../../components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs";
 import PieChart from "./Pie";
 import BarChart from "./Bar";
 import DoughnutChart from "./Doughnut";
 import ColumnChart from "./Column";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card";
 
 const CompanyForm = () => {
   const [companyUrl, setCompanyUrl] = useState("");
@@ -41,7 +41,37 @@ const CompanyForm = () => {
       'hsl(var(--chart-17))',
       'hsl(var(--chart-18))',
       'hsl(var(--chart-19))',
-      'hsl(var(--chart-20))'
+      'hsl(var(--chart-20))',
+      'hsl(var(--chart-21))',
+      'hsl(var(--chart-22))',
+      'hsl(var(--chart-23))',
+      'hsl(var(--chart-24))',
+      'hsl(var(--chart-25))',
+      'hsl(var(--chart-26))',
+      'hsl(var(--chart-27))',
+      'hsl(var(--chart-28))',
+      'hsl(var(--chart-29))',
+      'hsl(var(--chart-30))',
+      'hsl(var(--chart-31))',
+      'hsl(var(--chart-32))',
+      'hsl(var(--chart-33))',
+      'hsl(var(--chart-34))',
+      'hsl(var(--chart-35))',
+      'hsl(var(--chart-36))',
+      'hsl(var(--chart-37))',
+      'hsl(var(--chart-38))',
+      'hsl(var(--chart-39))',
+      'hsl(var(--chart-40))',
+      'hsl(var(--chart-41))',
+      'hsl(var(--chart-42))',
+      'hsl(var(--chart-43))',
+      'hsl(var(--chart-44))',
+      'hsl(var(--chart-45))',
+      'hsl(var(--chart-46))',
+      'hsl(var(--chart-47))',
+      'hsl(var(--chart-48))',
+      'hsl(var(--chart-49))',
+      'hsl(var(--chart-50))',
     ]
   };
 
@@ -69,20 +99,33 @@ const CompanyForm = () => {
           }
         });
 
+        // Sort countries by count
+        const sortedCountries = Object.entries(countryCount)
+          .sort(([,a], [,b]) => b - a)
+          .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
+
+        // Sort occupations by count
+        const sortedOccupations = Object.entries(occupationCount)
+          .sort(([,a], [,b]) => b - a)
+          .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
+
         setCountryData({
-          labels: Object.keys(countryCount),
+          labels: Object.keys(sortedCountries),
           datasets: [{
-            data: Object.values(countryCount),
-            backgroundColor: options.colors.slice(0, Object.keys(countryCount).length),
-            flags: Object.keys(countryCount).map(country => ({
+            data: Object.values(sortedCountries),
+            backgroundColor: options.colors.slice(0, Object.keys(sortedCountries).length),
+            flags: Object.keys(sortedCountries).map(country => ({
               flagUrl: countryFlags[country]
             }))
           }]
         });
 
         setOccupationData({
-          labels: Object.keys(occupationCount),
-          datasets: [{ data: Object.values(occupationCount) }],
+          labels: Object.keys(sortedOccupations),
+          datasets: [{ 
+            data: Object.values(sortedOccupations),
+            backgroundColor: options.colors.slice(0, Object.keys(sortedOccupations).length)
+          }]
         });
       });
   };

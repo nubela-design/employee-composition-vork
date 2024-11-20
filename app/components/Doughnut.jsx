@@ -36,7 +36,37 @@ function DoughnutChart({ data }) {
       'hsl(var(--chart-17))',
       'hsl(var(--chart-18))',
       'hsl(var(--chart-19))',
-      'hsl(var(--chart-20))'
+      'hsl(var(--chart-20))',
+      'hsl(var(--chart-21))',
+      'hsl(var(--chart-22))',
+      'hsl(var(--chart-23))',
+      'hsl(var(--chart-24))',
+      'hsl(var(--chart-25))',
+      'hsl(var(--chart-26))',
+      'hsl(var(--chart-27))',
+      'hsl(var(--chart-28))',
+      'hsl(var(--chart-29))',
+      'hsl(var(--chart-30))',
+      'hsl(var(--chart-31))',
+      'hsl(var(--chart-32))',
+      'hsl(var(--chart-33))',
+      'hsl(var(--chart-34))',
+      'hsl(var(--chart-35))',
+      'hsl(var(--chart-36))',
+      'hsl(var(--chart-37))',
+      'hsl(var(--chart-38))',
+      'hsl(var(--chart-39))',
+      'hsl(var(--chart-40))',
+      'hsl(var(--chart-41))',
+      'hsl(var(--chart-42))',
+      'hsl(var(--chart-43))',
+      'hsl(var(--chart-44))',
+      'hsl(var(--chart-45))',
+      'hsl(var(--chart-46))',
+      'hsl(var(--chart-47))',
+      'hsl(var(--chart-48))',
+      'hsl(var(--chart-49))',
+      'hsl(var(--chart-50))',
     ],
     dataLabels: {
       enabled: true
@@ -96,7 +126,7 @@ function DoughnutChart({ data }) {
         />
       </div>
       <div className="w-full max-w-[1200px]">
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {legendItems.map((item, index) => (
             <div key={index} className="flex gap-3 items-center p-2 rounded hover:bg-muted">
               <div 
